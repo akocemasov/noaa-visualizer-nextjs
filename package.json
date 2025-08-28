@@ -1,0 +1,30 @@
+{
+  "name": "noaa-visualizer-nextjs",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@emotion/react": "^11",
+    "@emotion/styled": "^11",
+    "@mui/icons-material": "^7",
+    "@mui/material": "^7",
+    "next": "^15",
+    "recharts": "^3",
+    "react": "^19",
+    "react-dom": "^19",
+    "typescript": "^5"
+  },
+  "devDependencies": {
+    "@types/node": "^24",
+    "eslint": "^9",
+    "eslint-config-next": "^15",
+    "eslint-config-prettier": "^10",
+    "eslint-plugin-prettier": "^5",
+    "prettier": "^3"
+  }
+}
