@@ -1,5 +1,8 @@
 import { createTheme, PaletteMode } from '@mui/material'
 
+const LIGHT_HOVER_BG = '#18497a'
+const DARK_HOVER_BG = '#baddfb'
+
 export const getTheme = (mode: PaletteMode) =>
     createTheme({
         palette: {
@@ -25,6 +28,28 @@ export const getTheme = (mode: PaletteMode) =>
             MuiButton: {
                 defaultProps: {
                     disableElevation: true,
+                },
+                styleOverrides: {
+                    root: {
+                        '&:hover': {
+                            backgroundColor:
+                                mode === 'light'
+                                    ? LIGHT_HOVER_BG
+                                    : DARK_HOVER_BG,
+                        },
+                    },
+                },
+            },
+            MuiIconButton: {
+                styleOverrides: {
+                    root: {
+                        '&:hover': {
+                            backgroundColor:
+                                mode === 'light'
+                                    ? LIGHT_HOVER_BG
+                                    : DARK_HOVER_BG,
+                        },
+                    },
                 },
             },
             MuiChip: {

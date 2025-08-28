@@ -49,12 +49,9 @@ npm run start
 
 ---
 
-## 🌐 Deployment
+## 🌐 App Preview
 
-1. Push your repo to GitHub.
-2. Go to [Vercel](https://vercel.com/), create a new project.
-3. Import the GitHub repo and deploy.
-4. Vercel handles builds, SSR, and CDN caching automatically.
+* [Vercel deployment](https://noaa-visualizer-nextjs.vercel.app/)
 
 ---
 
