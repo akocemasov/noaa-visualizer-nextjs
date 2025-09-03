@@ -103,16 +103,3 @@ src/
 * Add more NOAA datasets (solar wind, aurora forecast, etc.).
 * Interactive map visualization (D3.js or Leaflet).
 * User-selectable time ranges for charts.
-
----
-
-## 📜 License
-
-This project is for **learning and educational purposes only**.  
-You are free to look at the code and experiment. NOAA data is public domain but subject to [NOAA’s data usage guidelines](https://www.weather.gov/disclaimer).
-
----
-
-## 👨‍💻 Author
-
-Made by [Alex Cocemasov](https://github.com/akocemasov)
