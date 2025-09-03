@@ -34,7 +34,11 @@ export default function NavBar({ toggleColorMode, mode }: NavBarProps) {
                     </Button>
                 </Box>
 
-                <IconButton color='inherit' onClick={toggleColorMode}>
+                <IconButton
+                    color='inherit'
+                    onClick={toggleColorMode}
+                    aria-label='Toggle theme'
+                >
                     {mode === 'dark' ? (
                         <Brightness7Icon />
                     ) : (

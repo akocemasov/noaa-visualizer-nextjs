@@ -2,7 +2,7 @@
 
 import { ThemeProvider, CssBaseline } from '@mui/material'
 import { ReactNode, useMemo, useState } from 'react'
-import { getTheme } from '../theme/theme'
+import { getTheme } from '../theme'
 import NavBar from './NavBar'
 
 export default function ThemeProviderWrapper({
