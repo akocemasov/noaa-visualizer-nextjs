@@ -1,5 +1,16 @@
 import { createTheme, PaletteMode } from '@mui/material'
 
+declare module '@mui/material/styles' {
+    interface Palette {
+        bgTooltip?: string
+        textTooltip?: string
+    }
+    interface PaletteOptions {
+        bgTooltip?: string
+        textTooltip?: string
+    }
+}
+
 const LIGHT_HOVER_BG = '#18497a'
 const DARK_HOVER_BG = '#baddfb'
 
@@ -13,12 +24,16 @@ export const getTheme = (mode: PaletteMode) =>
                       secondary: { main: '#9c27b0' },
                       background: { default: '#f5f5f5', paper: '#ffffff' },
                       divider: '#e0e0e0',
+                      textTooltip: '#000',
+                      bgTooltip: '#fff',
                   }
                 : {
                       primary: { main: '#90caf9' },
                       secondary: { main: '#ce93d8' },
                       background: { default: '#121212', paper: '#1e1e1e' },
                       divider: '#333',
+                      textTooltip: '#fff',
+                      bgTooltip: '#555',
                   }),
         },
         typography: {
